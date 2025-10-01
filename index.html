@@ -1,20 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Riggen Snyder</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riggen Snyder | Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    h1 { color: #333; }
-    a { color: #007acc; text-decoration: none; }
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      line-height: 1.6;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #1e1e2f;
+      color: white;
+      padding: 2rem 3rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #61dafb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 3rem 6rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #1e1e2f;
+      border-bottom: 2px solid #61dafb;
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .skill {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .project a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #1e1e2f;
+      color: #bbb;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #61dafb;
+      text-decoration: none;
+    }
+
+    @media(max-width: 768px) {
+      section { padding: 2rem; }
+    }
   </style>
 </head>
 <body>
-  <h1>Riggen Snyder</h1>
-  <p>Computer Science & Engineering Student | Software Engineering Intern Candidate</p>
 
+  <!-- Header -->
+  <header>
+    <h1>Riggen Snyder</h1>
+    <p>Computer Science & Engineering Student | Software Engineer in Training</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <h2>Contact</h2>
-  <p>Email: riggen.snyder@gmail.com | <a href="https://www.linkedin.com/in/riggen-snyder">LinkedIn</a></p>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a Computer Science and Engineering student at the University of Iowa (graduating Dec 2026) 
+      with a focus in Software Engineering and a minor in Mathematics. I have experience in 
+      building software applications, embedded systems, and leading teams. I’m seeking a 
+      Software Engineering Internship where I can apply my programming, problem-solving, 
+      and leadership skills to real-world projects.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-list">
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+      <div class="skill">C++</div>
+      <div class="skill">Ruby & Rails</div>
+      <div class="skill">Git/GitHub/GitLab</div>
+      <div class="skill">Linux (daily driver)</div>
+      <div class="skill">OpenGL</div>
+      <div class="skill">Arduino / AVR Assembly</div>
+      <div class="skill">Verilog (FPGA Design)</div>
+    </div>
+  </section>
+<!-- Resume -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>You can view and download my resume here:</p>
+    <p><a href="RiggenSnyderResume.pdf" target="_blank">Download Resume (PDF)</a></p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:riggen.snyder@gmail.com">riggen.snyder@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/riggen-snyder" target="_blank">linkedin.com/in/riggen-snyder</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Riggen Snyder | Built with ❤️ using HTML & CSS</p>
+  </footer>
+
 </body>
 </html>
