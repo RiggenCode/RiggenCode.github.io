@@ -8,11 +8,89 @@
     /* Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 270px;
+      height: 100vh;
+      background: #1e2235;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 100;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+    }
+
+    .sidebar-content {
+      width: 100%;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      background: #2a2d42;
+    }
+
+    .sidebar-title {
+      color: #61dafb;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .sidebar-bio {
+      font-size: 0.95rem;
+      color: #bbb;
+      margin-bottom: 1.5rem;
+    }
+
+    .sidebar-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .sidebar-nav a {
+      color: #61dafb;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .sidebar-nav a:hover {
+      color: #007acc;
+    }
+
+    .sidebar-social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .sidebar-social a {
+      color: #bbb;
+      font-size: 1.2rem;
+      transition: color 0.2s;
+    }
+
+    .sidebar-social a:hover {
+      color: #61dafb;
+    }
+
     body {
       font-family: "Segoe UI", Tahoma, sans-serif;
       line-height: 1.6;
       background: #f8f9fa;
       color: #333;
+      margin-left: 270px;
     }
 
     header {
@@ -126,6 +204,28 @@
   </style>
 </head>
 <body>
+    <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <img src="profile.jpg" alt="Profile" class="profile-pic">
+      <h2>Riggen Snyder</h2>
+      <p class="sidebar-title">Software Engineer in Training</p>
+      <p class="sidebar-bio">
+        I take pride in being a constant learner—growing from my mistakes and always open to feedback.
+      </p>
+      <nav class="sidebar-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="sidebar-social">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/riggen-snyder" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </aside>
 
   <!-- Header -->
   <header>
