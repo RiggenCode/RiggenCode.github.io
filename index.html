@@ -201,7 +201,40 @@
 
     @media (max-width: 900px) {
       .sidebar {
-        display: none;
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        padding: 1rem 0.5rem;
+        margin-left: 0;
+      }
+      .sidebar-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        padding: 0;
+        text-align: left;
+      }
+      .profile-pic {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 0;
+        margin-right: 0.5rem;
+      }
+      .sidebar-nav {
+        flex-direction: row;
+        gap: 0.8rem;
+        margin-bottom: 0;
+      }
+      .sidebar-social {
+        flex-direction: row;
+        gap: 0.5rem;
+        margin-left: 0.5rem;
       }
       body {
         margin-left: 0;
